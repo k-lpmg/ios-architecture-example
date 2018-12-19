@@ -3,14 +3,23 @@
 ![Swift](https://img.shields.io/badge/Swift-4.2-orange.svg)
 [![GitHub license](https://img.shields.io/badge/license-MIT-lightgrey.svg?style=flat)](https://raw.githubusercontent.com/k-lpmg/ios-architecture-example/master/LICENSE)
 
-This is a Github search API example with the iOS Architecture pattern.
+This is a Github search API example with the iOS Architecture pattern. <br/>
 The applied pattern is as follows.
-MVC
-MVP
-MVVM with Delegate
-MVVM with Rx
+
+[MVC](https://github.com/k-lpmg/ios-architecture-example/tree/master/MVC)
+
+[MVP](https://github.com/k-lpmg/ios-architecture-example/tree/master/MVP)
+
+[MVVM with Delegate](https://github.com/k-lpmg/ios-architecture-example/tree/master/MVVM-Delegate)
+
+[MVVM with Rx](https://github.com/k-lpmg/ios-architecture-example/tree/master/MVVM-Rx)
 
 ## Example
+
+<img src="https://user-images.githubusercontent.com/15151687/50254746-a7b45500-0432-11e9-840d-dd13feea3fea.png" width="200" height="400">
+<img src="https://user-images.githubusercontent.com/15151687/50254746-a7b45500-0432-11e9-840d-dd13feea3fea.png" width="200" height="400">
+<img src="https://user-images.githubusercontent.com/15151687/50254830-ecd88700-0432-11e9-8b57-517aa8b122e1.png" width="200" height="400">
+<img src="https://user-images.githubusercontent.com/15151687/50254859-07aafb80-0433-11e9-8183-a1abcb0e9ae7.png" width="200" height="400">
 
 1. run pod install
 ```console
@@ -22,7 +31,7 @@ $ pod install
 $ open ios-architecture-example.xcworkspace
 ```
 
-3. run MVC, MVP, MVVM-Delegate, MVVM-Rx
+3. run MVC, MVP, MVVM-Delegate or MVVM-Rx
 
 
 ## LICENSE
