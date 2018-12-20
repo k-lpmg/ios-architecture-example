@@ -3,7 +3,11 @@
 ![Swift](https://img.shields.io/badge/Swift-4.2-orange.svg)
 [![GitHub license](https://img.shields.io/badge/license-MIT-lightgrey.svg?style=flat)](https://raw.githubusercontent.com/k-lpmg/ios-architecture-example/master/LICENSE)
 
-This is a Github search API example with the iOS Architecture pattern. <br/>
+This is a Github search API example with the iOS Architecture pattern.
+
+
+## Architecture patterns
+
 The applied pattern is as follows.
 
 [MVC](https://github.com/k-lpmg/ios-architecture-example/tree/master/MVC/Sources)
@@ -13,6 +17,16 @@ The applied pattern is as follows.
 [MVVM with Delegate](https://github.com/k-lpmg/ios-architecture-example/tree/master/MVVM-Delegate/Sources)
 
 [MVVM with Rx](https://github.com/k-lpmg/ios-architecture-example/tree/master/MVVM-Rx/Sources)
+
+
+## Shared
+
+The code used together in the examples.
+
+[Model](https://github.com/k-lpmg/ios-architecture-example/tree/master/Shared/Model)
+
+[View](https://github.com/k-lpmg/ios-architecture-example/blob/master/Shared/View/RepositoryTableViewCell.swift)
+
 
 ## Example
 
