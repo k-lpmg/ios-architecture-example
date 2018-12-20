@@ -47,7 +47,7 @@ $ pod install
 $ open ios-architecture-example.xcworkspace
 ```
 
-3. run MVC, MVP, MVVM-Delegate or MVVM-Rx
+3. run [MVC](https://github.com/k-lpmg/ios-architecture-example/tree/master/MVC), [MVP](https://github.com/k-lpmg/ios-architecture-example/tree/master/MVP), [MVVM-Delegate](https://github.com/k-lpmg/ios-architecture-example/tree/master/MVVM-Delegate) or [MVVM-Rx](https://github.com/k-lpmg/ios-architecture-example/tree/master/MVVM-Rx)
 
 
 ## LICENSE
