@@ -23,7 +23,7 @@ The applied pattern is as follows.
 
 The code used together in the examples.
 
-[Model](https://github.com/k-lpmg/ios-architecture-example/tree/master/Shared/Model)
+[Model](https://github.com/k-lpmg/ios-architecture-example/blob/master/Shared/Model/SearchRepositoriesModel.swift)
 
 [View](https://github.com/k-lpmg/ios-architecture-example/blob/master/Shared/View/RepositoryTableViewCell.swift)
 
