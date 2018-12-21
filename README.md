@@ -1,9 +1,9 @@
-# ios architecture example
+# iOS Architecture Example
 
 ![Swift](https://img.shields.io/badge/Swift-4.2-orange.svg)
 [![GitHub license](https://img.shields.io/badge/license-MIT-lightgrey.svg?style=flat)](https://raw.githubusercontent.com/k-lpmg/ios-architecture-example/master/LICENSE)
 
-Github search API examples with the iOS Architecture pattern.
+Github search API examples with the iOS architecture pattern.
 
 
 ## Architecture patterns

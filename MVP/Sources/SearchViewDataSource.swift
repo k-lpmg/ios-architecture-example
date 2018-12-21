@@ -30,10 +30,10 @@ final class SearchViewDataSource: NSObject {
     
     public func configure(with searchBar: UISearchBar, tableView: UITableView) {
         searchBar.delegate = self
+        
         tableView.dataSource = self
         tableView.delegate = self
         tableView.separatorStyle = .none
-        
         tableView.register(RepositoryTableViewCell.self, forCellReuseIdentifier: Const.cellReuseId)
     }
     
