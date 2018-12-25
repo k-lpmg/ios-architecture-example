@@ -7,5 +7,6 @@
 //
 
 enum APIError: Error {
+    case urlIsInvalid
     case dataIsNil
 }
