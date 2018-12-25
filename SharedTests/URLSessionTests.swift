@@ -13,12 +13,22 @@ import Foundation
 
 class URLSessionTests: XCTestCase {
     
+    // MARK: - Properties
+    
+    private var urlComponents: URLComponents {
+        var components = URLComponents()
+        components.scheme = "https"
+        components.host = "api.github.com"
+        components.path = "/search/repositories"
+        return components
+    }
+    
     // MARK: - Tests
     
     func testDataTask() {
         // Given
         let expectation = self.expectation(description: "testDataTask")
-        guard let url = baseUrlComponents.url else {
+        guard let url = urlComponents.url else {
             XCTFail("baseUrlComponents.url is nil")
             return
         }

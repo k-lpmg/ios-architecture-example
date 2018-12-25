@@ -67,7 +67,7 @@ final class SearchViewPresenter: SearchPresenter {
     }
     
     private func requestRepositories(searchText: String) {
-        GithubSearchRepositoriesAPI.shared.searchRepositories(query: searchText) { (result) in
+        GithubService().searchRepositories(query: searchText) { (result) in
             switch result {
             case .value(let value):
                 self.repositories = value.items

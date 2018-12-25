@@ -13,40 +13,48 @@ import Foundation
 
 class URLComponentsTests: XCTestCase {
     
+    // MARK: - Constants
+    
+    private enum Const {
+        static let url = "https://api.github.com"
+    }
+    
     // MARK: - Properties
     
-    let baseUrl = "https://api.github.com"
+    private var urlComponents: URLComponents {
+        var components = URLComponents()
+        components.scheme = "https"
+        components.host = "api.github.com"
+        return components
+    }
     
     // MARK: - Tests
     
     func testSchemeAndHost() {
-        // Given
-        let components = baseUrlComponents
-        
-        // Then
-        componentsCompare(components: components, string: baseUrl)
+        componentsCompare(components: urlComponents, string: Const.url)
     }
     
     func testPath() {
         // Given
-        var components = baseUrlComponents
+        var components = urlComponents
         
         // When
         components.path = "/search/repositories"
         
         // Then
-        componentsCompare(components: components, string: baseUrl.appending("/search/repositories"))
+        componentsCompare(components: components, string: Const.url.appending("/search/repositories"))
     }
     
     func testQueryItem() {
         // Given
-        var components = baseUrlComponents
+        var components = urlComponents
+        components.path = "/search/repositories"
         
         // When
         components.queryItems = [URLQueryItem(name: "q", value: "swift")]
         
         // Then
-        componentsCompare(components: components, string: baseUrl.appending("?q=swift"))
+        componentsCompare(components: components, string: Const.url.appending("/search/repositories?q=swift"))
     }
     
     // MARK: - Private methods
