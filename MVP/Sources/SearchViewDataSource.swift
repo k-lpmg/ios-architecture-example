@@ -18,7 +18,7 @@ final class SearchViewDataSource: NSObject {
     
     // MARK: - Properties
     
-    private let presenter: SearchPresenter
+    private weak let presenter: SearchPresenter
     
     // MARK: - Con(De)structor
     

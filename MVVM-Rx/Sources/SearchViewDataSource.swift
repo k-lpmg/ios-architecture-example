@@ -20,7 +20,7 @@ final class SearchViewDataSource: NSObject {
     
     // MARK: - Properties
     
-    private let viewModel: SearchViewModel
+    private unowned let viewModel: SearchViewModel
     private let searchTextDidChange: AnyObserver<String>
     private let searchButtonClicked: AnyObserver<String>
     private let indexPathDidSelected: AnyObserver<IndexPath>

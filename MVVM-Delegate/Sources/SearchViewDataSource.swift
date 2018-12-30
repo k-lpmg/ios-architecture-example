@@ -18,7 +18,7 @@ final class SearchViewDataSource: NSObject {
     
     // MARK: - Properties
     
-    private let viewModel: SearchViewModel
+    private weak let viewModel: SearchViewModel
     
     // MARK: - Con(De)structor
     
