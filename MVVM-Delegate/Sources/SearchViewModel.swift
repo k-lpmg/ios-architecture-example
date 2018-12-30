@@ -35,18 +35,18 @@ final class SearchViewModel {
     }
     private var searchTimer: Timer?
     
-    // MARK: - Public methods
+    // MARK: - Internal methods
     
-    public func repository(at index: Int) -> RepositoryModel {
+    func repository(at index: Int) -> RepositoryModel {
         return repositories[index]
     }
     
-    public func showRepositoryUrl(at index: Int) {
+    func showRepositoryUrl(at index: Int) {
         guard let url = URL(string: repository(at: index).html_url) else {return}
         delegate?.showRepositoryUrl(url: url)
     }
     
-    public func searchRepositories() {
+    func searchRepositories() {
         removeSearchTimer()
         searchTimerCompleted()
     }

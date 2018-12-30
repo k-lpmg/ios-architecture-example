@@ -26,9 +26,9 @@ final class SearchViewDataSource: NSObject {
         self.viewModel = viewModel
     }
     
-    // MARK: - Public methods
+    // MARK: - Internal methods
     
-    public func configure(with searchBar: UISearchBar, tableView: UITableView) {
+    func configure(with searchBar: UISearchBar, tableView: UITableView) {
         searchBar.delegate = self
         
         tableView.dataSource = self

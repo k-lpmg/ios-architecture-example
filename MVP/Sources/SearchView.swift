@@ -62,13 +62,13 @@ final class SearchViewController: UIViewController, SearchView {
         dataSource.configure(with: searchBar, tableView: tableView)
     }
     
-    // MARK: - Public methods
+    // MARK: - Internal methods
     
-    public func reloadData() {
+    func reloadData() {
         tableView.reloadData()
     }
     
-    public func showRepositoryUrl(url: URL) {
+    func showRepositoryUrl(url: URL) {
         let controller = SFSafariViewController(url: url)
         present(controller, animated: true, completion: nil)
     }

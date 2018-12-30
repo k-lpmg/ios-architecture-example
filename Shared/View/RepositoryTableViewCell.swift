@@ -84,9 +84,9 @@ final class RepositoryTableViewCell: UITableViewCell {
         reset()
     }
     
-    // MARK: - Public methods
+    // MARK: - Internal methods
     
-    public func configure(with model: RepositoryModel) {
+    func configure(with model: RepositoryModel) {
         titleLabel.text = model.full_name
         descriptionLabel.text = model.description
         languageLabel.text = model.language

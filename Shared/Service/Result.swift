@@ -8,11 +8,11 @@
 
 import Foundation
 
-public enum Result<Value> {
+enum Result<Value> {
     case value(Value)
     case error(Error)
     
-    public var isSuccess: Bool {
+    var isSuccess: Bool {
         switch self {
         case .value:
             return true
@@ -21,11 +21,11 @@ public enum Result<Value> {
         }
     }
     
-    public var isFailure: Bool {
+    var isFailure: Bool {
         return !isSuccess
     }
     
-    public var value: Value? {
+    var value: Value? {
         switch self {
         case .value(let value):
             return value
@@ -34,7 +34,7 @@ public enum Result<Value> {
         }
     }
     
-    public var error: Error? {
+    var error: Error? {
         switch self {
         case .value:
             return nil

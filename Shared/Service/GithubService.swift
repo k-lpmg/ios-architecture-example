@@ -22,10 +22,10 @@ final class GithubService: APIService {
         return "api.github.com"
     }
     
-    // MARK: - Public methods
+    // MARK: - Internal methods
     
     @discardableResult
-    public func searchRepositories(query: String, completion: @escaping (Result<SearchRepositoriesModel>) -> Void) -> URLSessionTask? {
+    func searchRepositories(query: String, completion: @escaping (Result<SearchRepositoriesModel>) -> Void) -> URLSessionTask? {
         let queryItems = [URLQueryItem(name: "q", value: query)]
         return dataTask(SearchRepositoriesModel.self, path: "/search/repositories", queryItems: queryItems, completion: { (response) in
             completion(response)
