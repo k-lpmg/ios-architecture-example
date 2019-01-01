@@ -46,7 +46,8 @@ final class SearchViewController: UIViewController {
         layout()
         
         viewModel.delegate = self
-        dataSource.configure(with: searchBar, tableView: tableView)
+        searchBar.delegate = self
+        dataSource.configure(with: tableView)
     }
     
     // MARK: - Private methods
@@ -71,6 +72,20 @@ extension SearchViewController {
         tableView.trailingAnchor.constraint(equalTo: view.trailingAnchor).isActive = true
         tableView.topAnchor.constraint(equalTo: searchBar.bottomAnchor).isActive = true
         tableView.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
+    }
+    
+}
+
+// MARK: - UISearchBarDelegate
+
+extension SearchViewController: UISearchBarDelegate {
+    
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        viewModel.searchText = searchText
+    }
+    
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        viewModel.searchRepositories()
     }
     
 }

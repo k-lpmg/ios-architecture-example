@@ -18,7 +18,7 @@ final class SearchViewDataSource: NSObject {
     
     // MARK: - Properties
     
-    private weak let viewModel: SearchViewModel
+    private unowned let viewModel: SearchViewModel
     
     // MARK: - Con(De)structor
     
@@ -28,27 +28,11 @@ final class SearchViewDataSource: NSObject {
     
     // MARK: - Internal methods
     
-    func configure(with searchBar: UISearchBar, tableView: UITableView) {
-        searchBar.delegate = self
-        
+    func configure(with tableView: UITableView) {
         tableView.dataSource = self
         tableView.delegate = self
         tableView.separatorStyle = .none
         tableView.register(RepositoryTableViewCell.self, forCellReuseIdentifier: Const.cellReuseId)
-    }
-    
-}
-
-// MARK: - UISearchBarDelegate
-
-extension SearchViewDataSource: UISearchBarDelegate {
-    
-    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
-        viewModel.searchText = searchText
-    }
-    
-    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
-        viewModel.searchRepositories()
     }
     
 }

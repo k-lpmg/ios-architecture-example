@@ -41,8 +41,6 @@ final class SearchViewController: UIViewController {
     
     private lazy var dataSource: SearchViewDataSource = {
         return .init(viewModel: self.viewModel,
-                     searchTextDidChange: self.searchTextDidChange.asObserver(),
-                     searchButtonClicked: self.searchButtonClicked.asObserver(),
                      indexPathDidSelected: self.indexPathDidSelected.asObserver())
     }()
     private lazy var viewModel: SearchViewModel = {
@@ -88,13 +86,13 @@ final class SearchViewController: UIViewController {
         viewModel.showRepository
             .bind(to: showRepository)
             .disposed(by: disposeBag)
-        
-        dataSource.configure(with: searchBar, tableView: tableView)
     }
     
     private func setProperties() {
         title = "MVVM-Rx"
         view.backgroundColor = .white
+        searchBar.delegate = self
+        dataSource.configure(with: tableView)
     }
     
 }
@@ -112,6 +110,21 @@ extension SearchViewController {
         tableView.trailingAnchor.constraint(equalTo: view.trailingAnchor).isActive = true
         tableView.topAnchor.constraint(equalTo: searchBar.bottomAnchor).isActive = true
         tableView.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
+    }
+    
+}
+
+// MARK: - UISearchBarDelegate
+
+extension SearchViewController: UISearchBarDelegate {
+    
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        searchTextDidChange.onNext(searchText)
+    }
+    
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        guard let text = searchBar.text else {return}
+        searchButtonClicked.onNext(text)
     }
     
 }

@@ -21,46 +21,23 @@ final class SearchViewDataSource: NSObject {
     // MARK: - Properties
     
     private unowned let viewModel: SearchViewModel
-    private let searchTextDidChange: AnyObserver<String>
-    private let searchButtonClicked: AnyObserver<String>
     private let indexPathDidSelected: AnyObserver<IndexPath>
     
     // MARK: - Con(De)structor
     
     init(viewModel: SearchViewModel,
-         searchTextDidChange: AnyObserver<String>,
-         searchButtonClicked: AnyObserver<String>,
          indexPathDidSelected: AnyObserver<IndexPath>) {
         self.viewModel = viewModel
-        self.searchTextDidChange = searchTextDidChange
-        self.searchButtonClicked = searchButtonClicked
         self.indexPathDidSelected = indexPathDidSelected
     }
     
     // MARK: - Internal methods
     
-    func configure(with searchBar: UISearchBar, tableView: UITableView) {
-        searchBar.delegate = self
-        
+    func configure(with tableView: UITableView) {
         tableView.dataSource = self
         tableView.delegate = self
         tableView.separatorStyle = .none
         tableView.register(RepositoryTableViewCell.self, forCellReuseIdentifier: Const.cellReuseId)
-    }
-    
-}
-
-// MARK: - UISearchBarDelegate
-
-extension SearchViewDataSource: UISearchBarDelegate {
-    
-    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
-        searchTextDidChange.onNext(searchText)
-    }
-    
-    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
-        guard let text = searchBar.text else {return}
-        searchButtonClicked.onNext(text)
     }
     
 }
