@@ -10,13 +10,13 @@
 		019569282913A1E5B8FB9153 /* Pods_MVP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81EF84DCC2E82AAE74287BC3 /* Pods_MVP.framework */; };
 		34F5F270B0F7B3B66AF25993 /* Pods_MVVM_Delegate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1A8D238274A96CB8473BCE0 /* Pods_MVVM_Delegate.framework */; };
 		5E196204A579C410CD25DB3A /* Pods_Shared.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9D2B51CFF21ECEF6B164739 /* Pods_Shared.framework */; };
+		652A6CB221DB93EF00DCC897 /* GitHubServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 652A6CB121DB93EF00DCC897 /* GitHubServiceTests.swift */; };
 		6547AA7621BAADEF0071FD42 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6547AA7521BAADEF0071FD42 /* AppDelegate.swift */; };
 		6547AA8C21BAB1240071FD42 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6547AA8B21BAB1240071FD42 /* AppDelegate.swift */; };
 		6547AAA221BAB1330071FD42 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6547AAA121BAB1330071FD42 /* AppDelegate.swift */; };
 		6547AAB821BAB1400071FD42 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6547AAB721BAB1400071FD42 /* AppDelegate.swift */; };
 		6547AB0221BAB3810071FD42 /* Shared.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6547AAF921BAB3810071FD42 /* Shared.framework */; };
 		6547AB0B21BAB3810071FD42 /* Shared.h in Headers */ = {isa = PBXBuildFile; fileRef = 6547AAFB21BAB3810071FD42 /* Shared.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6547AB2121BAB3DA0071FD42 /* GitHubServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6547AB2021BAB3DA0071FD42 /* GitHubServiceTests.swift */; };
 		6547AB2321BAB3FA0071FD42 /* ResultTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6547AB2221BAB3FA0071FD42 /* ResultTests.swift */; };
 		6547AB2521BAB4020071FD42 /* URLComponentsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6547AB2421BAB4020071FD42 /* URLComponentsTests.swift */; };
 		6547AB2721BAB40A0071FD42 /* URLRequestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6547AB2621BAB40A0071FD42 /* URLRequestTests.swift */; };
@@ -97,6 +97,7 @@
 		05AA44C5793119E082DD80C7 /* Pods-MVP.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVP.release.xcconfig"; path = "Pods/Target Support Files/Pods-MVP/Pods-MVP.release.xcconfig"; sourceTree = "<group>"; };
 		5D55B294039AFA436489BABD /* Pods-MVC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVC.release.xcconfig"; path = "Pods/Target Support Files/Pods-MVC/Pods-MVC.release.xcconfig"; sourceTree = "<group>"; };
 		646A362171034624C8993F20 /* Pods-Shared.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shared.release.xcconfig"; path = "Pods/Target Support Files/Pods-Shared/Pods-Shared.release.xcconfig"; sourceTree = "<group>"; };
+		652A6CB121DB93EF00DCC897 /* GitHubServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubServiceTests.swift; sourceTree = "<group>"; };
 		6547AA7321BAADEF0071FD42 /* MVC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MVC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6547AA7521BAADEF0071FD42 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6547AA8121BAADF10071FD42 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -114,7 +115,6 @@
 		6547AAFC21BAB3810071FD42 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6547AB0121BAB3810071FD42 /* SharedTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SharedTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6547AB0A21BAB3810071FD42 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6547AB2021BAB3DA0071FD42 /* GitHubServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubServiceTests.swift; sourceTree = "<group>"; };
 		6547AB2221BAB3FA0071FD42 /* ResultTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultTests.swift; sourceTree = "<group>"; };
 		6547AB2421BAB4020071FD42 /* URLComponentsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLComponentsTests.swift; sourceTree = "<group>"; };
 		6547AB2621BAB40A0071FD42 /* URLRequestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLRequestTests.swift; sourceTree = "<group>"; };
@@ -271,12 +271,12 @@
 			isa = PBXGroup;
 			children = (
 				6547AB0A21BAB3810071FD42 /* Info.plist */,
-				6547AB2021BAB3DA0071FD42 /* GitHubServiceTests.swift */,
 				6547AB2221BAB3FA0071FD42 /* ResultTests.swift */,
 				6547AB2421BAB4020071FD42 /* URLComponentsTests.swift */,
 				6547AB2621BAB40A0071FD42 /* URLRequestTests.swift */,
 				6547AB2821BAB4130071FD42 /* URLSessionTests.swift */,
 				6579F4E021D225E6006D963E /* APIServiceTests.swift */,
+				652A6CB121DB93EF00DCC897 /* GitHubServiceTests.swift */,
 			);
 			path = SharedTests;
 			sourceTree = "<group>";
@@ -934,10 +934,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				6579F4E121D225E6006D963E /* APIServiceTests.swift in Sources */,
-				6547AB2121BAB3DA0071FD42 /* GitHubServiceTests.swift in Sources */,
 				6547AB2921BAB4130071FD42 /* URLSessionTests.swift in Sources */,
 				6547AB2321BAB3FA0071FD42 /* ResultTests.swift in Sources */,
 				6547AB2521BAB4020071FD42 /* URLComponentsTests.swift in Sources */,
+				652A6CB221DB93EF00DCC897 /* GitHubServiceTests.swift in Sources */,
 				6547AB2721BAB40A0071FD42 /* URLRequestTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
