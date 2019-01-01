@@ -1,5 +1,5 @@
 //
-//  GithubServiceTests.swift
+//  GitHubServiceTests.swift
 //  SharedTests
 //
 //  Created by DongHeeKang on 07/12/2018.
@@ -11,9 +11,9 @@ import XCTest
 
 import Foundation
 
-class GithubServiceTests: XCTestCase {
+class GitHubServiceTests: XCTestCase {
     
-    let service = GithubService()
+    let service = GitHubService()
     
     // MARK: - Tests
 

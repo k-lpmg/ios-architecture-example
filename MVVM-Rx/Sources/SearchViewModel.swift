@@ -29,7 +29,7 @@ final class SearchViewModel {
          indexPathDidSelected: Observable<IndexPath>) {
         
         func searchRepositories(text: String, completion: @escaping ([RepositoryModel]) -> Void) {
-            GithubService().searchRepositories(query: text) { (result) in
+            GitHubService().searchRepositories(query: text) { (result) in
                 switch result {
                 case .value(let value):
                     completion(value.items)

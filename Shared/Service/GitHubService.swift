@@ -1,5 +1,5 @@
 //
-//  GithubService.swift
+//  GitHubService.swift
 //  ios-architecture-example
 //
 //  Created by DongHeeKang on 06/12/2018.
@@ -8,7 +8,7 @@
 
 import Foundation
 
-final class GithubService: APIService {
+final class GitHubService: APIService {
     
     // MARK: - Properties
     

@@ -63,7 +63,7 @@ final class SearchViewModel {
     }
     
     private func requestRepositories(searchText: String) {
-        GithubService().searchRepositories(query: searchText) { (result) in
+        GitHubService().searchRepositories(query: searchText) { (result) in
             switch result {
             case .value(let value):
                 self.repositories = value.items
