@@ -13,14 +13,8 @@ final class SearchViewModel {
     
     // MARK: - Properties
     
-    let reloadData: Observable<Void>
     let showRepository: Observable<RepositoryModel>
-    var repositories: [RepositoryModel] {
-        return _repositories.value
-    }
-    
-    private let _repositories: BehaviorRelay<[RepositoryModel]>
-    private let disposeBag = DisposeBag()
+    let repositories: Observable<[RepositoryModel]>
     
     // MARK: - Con(De)structor
     
@@ -28,39 +22,30 @@ final class SearchViewModel {
          searchButtonClicked: Observable<String>,
          indexPathDidSelected: Observable<IndexPath>) {
         
-        func searchRepositories(text: String, completion: @escaping ([RepositoryModel]) -> Void) {
+        func searchRepositories(text: String) -> Observable<[RepositoryModel]> {
+            let repositoryModel = PublishSubject<[RepositoryModel]>()
+            
             GitHubService().searchRepositories(query: text) { (result) in
                 switch result {
                 case .value(let value):
-                    completion(value.items)
+                    repositoryModel.onNext(value.items)
                 case .error(_):
-                    completion([])
+                    repositoryModel.onNext([])
                 }
             }
+            
+            return repositoryModel.asObservable()
         }
         
-        let _reloadData = PublishSubject<Void>()
-        self.reloadData = _reloadData
-        
-        let _repositories = BehaviorRelay<[RepositoryModel]>(value: [])
-        self._repositories = _repositories
-        _repositories.asObservable().map { _ in }
-            .bind(to: _reloadData)
-            .disposed(by: disposeBag)
-        
-        let _searchTextDidChange = searchTextDidChange
-            .debounce(0.3, scheduler: MainScheduler.instance)
+        let _searchTextDidChange = searchTextDidChange.debounce(0.3, scheduler: MainScheduler.instance)
         let _searchButtonClicked = searchButtonClicked
-        Observable.of(_searchTextDidChange, _searchButtonClicked).merge()
+        repositories = Observable.of(_searchTextDidChange, _searchButtonClicked).merge()
             .distinctUntilChanged()
-            .subscribe(onNext: {
-                searchRepositories(text: $0) {
-                    _repositories.accept($0)
-                }
-            })
-        .disposed(by: disposeBag)
+            .flatMapLatest {
+                searchRepositories(text: $0)
+            }
         
-        showRepository = indexPathDidSelected.withLatestFrom(_repositories.asObservable()) { $1[$0.row] }
+        showRepository = indexPathDidSelected.withLatestFrom(repositories) { $1[$0.row] }
     }
     
 }

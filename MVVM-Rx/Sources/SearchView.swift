@@ -22,11 +22,6 @@ final class SearchViewController: UIViewController {
     
     // MARK: - Properties
     
-    private var reloadData: AnyObserver<Void> {
-        return Binder(self) { me, _ in
-            me.tableView.reloadData()
-        }.asObserver()
-    }
     private var showRepository: AnyObserver<RepositoryModel> {
         return Binder(self) { me, repository in
             guard let url = URL(string: repository.html_url) else {return}
@@ -37,12 +32,8 @@ final class SearchViewController: UIViewController {
     private let searchTextDidChange = PublishSubject<String>()
     private let searchButtonClicked = PublishSubject<String>()
     private let indexPathDidSelected = PublishSubject<IndexPath>()
-    private let disposeBag = DisposeBag()
+    private var disposeBag = DisposeBag()
     
-    private lazy var dataSource: SearchViewDataSource = {
-        return .init(viewModel: self.viewModel,
-                     indexPathDidSelected: self.indexPathDidSelected.asObserver())
-    }()
     private lazy var viewModel: SearchViewModel = {
         return .init(searchTextDidChange: searchTextDidChange,
                      searchButtonClicked: searchButtonClicked,
@@ -61,6 +52,8 @@ final class SearchViewController: UIViewController {
         tableView.translatesAutoresizingMaskIntoConstraints = false
         tableView.rowHeight = UITableView.automaticDimension
         tableView.estimatedRowHeight = UITableView.automaticDimension
+        tableView.separatorStyle = .none
+        tableView.register(RepositoryTableViewCell.self, forCellReuseIdentifier: Const.cellReuseId)
         return tableView
     }()
     
@@ -69,7 +62,7 @@ final class SearchViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        setBindings()
+        bindViewModel()
         setProperties()
         view.addSubview(searchBar)
         view.addSubview(tableView)
@@ -78,9 +71,11 @@ final class SearchViewController: UIViewController {
     
     // MARK: - Private methods
     
-    private func setBindings() {
-        viewModel.reloadData
-            .bind(to: reloadData)
+    private func bindViewModel() {
+        viewModel.repositories
+            .bind(to: tableView.rx.items(cellIdentifier: Const.cellReuseId, cellType: RepositoryTableViewCell.self)) { index, model, cell in
+                cell.configure(with: model)
+            }
             .disposed(by: disposeBag)
         
         viewModel.showRepository
@@ -92,7 +87,7 @@ final class SearchViewController: UIViewController {
         title = "MVVM-Rx"
         view.backgroundColor = .white
         searchBar.delegate = self
-        dataSource.configure(with: tableView)
+        tableView.delegate = self
     }
     
 }
@@ -127,4 +122,20 @@ extension SearchViewController: UISearchBarDelegate {
         searchButtonClicked.onNext(text)
     }
     
+}
+
+// MARK: - UITableViewDelegate
+
+extension SearchViewController: UITableViewDelegate {
+
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return UITableView.automaticDimension
+    }
+
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: false)
+
+        indexPathDidSelected.onNext(indexPath)
+    }
+
 }
