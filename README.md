@@ -34,10 +34,10 @@ The codes used together in the examples.
 ## Example
 
 <p float="left">
-<img src="https://user-images.githubusercontent.com/15151687/50254859-07aafb80-0433-11e9-8183-a1abcb0e9ae7.png" width="220" height="470">
-<img src="https://user-images.githubusercontent.com/15151687/50254830-ecd88700-0432-11e9-8b57-517aa8b122e1.png" width="220" height="470">
-<img src="https://user-images.githubusercontent.com/15151687/50256121-28298480-0438-11e9-8a50-7df09f08a3b2.png" width="220" height="470">
-<img src="https://user-images.githubusercontent.com/15151687/50254746-a7b45500-0432-11e9-840d-dd13feea3fea.png" width="220" height="470">
+<img src="https://user-images.githubusercontent.com/15151687/50254859-07aafb80-0433-11e9-8183-a1abcb0e9ae7.png" width="206" height="470">
+<img src="https://user-images.githubusercontent.com/15151687/50254830-ecd88700-0432-11e9-8b57-517aa8b122e1.png" width="206" height="470">
+<img src="https://user-images.githubusercontent.com/15151687/50256121-28298480-0438-11e9-8a50-7df09f08a3b2.png" width="206" height="470">
+<img src="https://user-images.githubusercontent.com/15151687/50254746-a7b45500-0432-11e9-840d-dd13feea3fea.png" width="206" height="470">
 </p>
 
 1. run pod install
