@@ -1,11 +1,10 @@
 # iOS Architecture Example
 
+[![Build Status](https://travis-ci.org/k-lpmg/ios-architecture-example.svg?branch=master)](https://travis-ci.org/k-lpmg/ios-architecture-example)
+![Swift](https://img.shields.io/badge/Swift-4.2-orange.svg)
 ![Architecture](https://img.shields.io/badge/architecture-MVC-brightgreen.svg)
 ![Architecture](https://img.shields.io/badge/architecture-MVP-brightgreen.svg)
 ![Architecture](https://img.shields.io/badge/architecture-MVVM-brightgreen.svg)
-[![Build Status](https://travis-ci.org/k-lpmg/ios-architecture-example.svg?branch=master)](https://travis-ci.org/k-lpmg/ios-architecture-example)
-![Swift](https://img.shields.io/badge/Swift-4.2-orange.svg)
-![Platform](https://img.shields.io/badge/platforms-ios-brightgreen.svg)
 
 Github search API examples with the iOS architecture pattern.
 
