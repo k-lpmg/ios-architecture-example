@@ -3,11 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		019569282913A1E5B8FB9153 /* Pods_MVP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81EF84DCC2E82AAE74287BC3 /* Pods_MVP.framework */; };
+		222E9D5B1FFE40E254EBB74A /* Pods_Uber_RIBs.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2693DCC9430ADE54F9CF991D /* Pods_Uber_RIBs.framework */; };
 		34F5F270B0F7B3B66AF25993 /* Pods_MVVM_Delegate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1A8D238274A96CB8473BCE0 /* Pods_MVVM_Delegate.framework */; };
 		5E196204A579C410CD25DB3A /* Pods_Shared.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9D2B51CFF21ECEF6B164739 /* Pods_Shared.framework */; };
 		652A6CB221DB93EF00DCC897 /* GitHubServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 652A6CB121DB93EF00DCC897 /* GitHubServiceTests.swift */; };
@@ -75,6 +76,10 @@
 		65DA6A312236560B00856F57 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65DA6A2E2236560B00856F57 /* Assets.xcassets */; };
 		65DA6A362236561600856F57 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65DA6A322236561600856F57 /* Assets.xcassets */; };
 		65DA6A372236561600856F57 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65DA6A342236561600856F57 /* LaunchScreen.storyboard */; };
+		65F250C52302902900C436B1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F250C42302902900C436B1 /* AppDelegate.swift */; };
+		65F250C72302902900C436B1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F250C62302902900C436B1 /* ViewController.swift */; };
+		65F250CC2302902900C436B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65F250CB2302902900C436B1 /* Assets.xcassets */; };
+		65F250CF2302902900C436B1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65F250CD2302902900C436B1 /* LaunchScreen.storyboard */; };
 		6E872EECB2A3B9DC445EC0F0 /* Pods_MVC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD0937EAD7BE8C188F4B3A04 /* Pods_MVC.framework */; };
 		85BD74D997BA990F85A5ABAE /* Pods_MVVM_Rx.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4A1A327EBF9F42083E924C /* Pods_MVVM_Rx.framework */; };
 		C919749218F8E6A73E26D423 /* Pods_SharedTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB85B54724E92146D4245A97 /* Pods_SharedTests.framework */; };
@@ -99,6 +104,8 @@
 
 /* Begin PBXFileReference section */
 		05AA44C5793119E082DD80C7 /* Pods-MVP.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVP.release.xcconfig"; path = "Pods/Target Support Files/Pods-MVP/Pods-MVP.release.xcconfig"; sourceTree = "<group>"; };
+		2693DCC9430ADE54F9CF991D /* Pods_Uber_RIBs.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Uber_RIBs.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F4D97D6627124755B2163B3 /* Pods-Uber-RIBs.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Uber-RIBs.release.xcconfig"; path = "Pods/Target Support Files/Pods-Uber-RIBs/Pods-Uber-RIBs.release.xcconfig"; sourceTree = "<group>"; };
 		5D55B294039AFA436489BABD /* Pods-MVC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVC.release.xcconfig"; path = "Pods/Target Support Files/Pods-MVC/Pods-MVC.release.xcconfig"; sourceTree = "<group>"; };
 		646A362171034624C8993F20 /* Pods-Shared.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shared.release.xcconfig"; path = "Pods/Target Support Files/Pods-Shared/Pods-Shared.release.xcconfig"; sourceTree = "<group>"; };
 		652A6CB121DB93EF00DCC897 /* GitHubServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubServiceTests.swift; sourceTree = "<group>"; };
@@ -149,6 +156,12 @@
 		65DA6A2E2236560B00856F57 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		65DA6A322236561600856F57 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		65DA6A352236561600856F57 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		65F250C22302902900C436B1 /* Uber-RIBs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Uber-RIBs.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		65F250C42302902900C436B1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		65F250C62302902900C436B1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		65F250CB2302902900C436B1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		65F250CE2302902900C436B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		65F250D02302902900C436B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		74AFF3BDAE8D06C020920E3A /* Pods-SharedTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SharedTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SharedTests/Pods-SharedTests.debug.xcconfig"; sourceTree = "<group>"; };
 		81EF84DCC2E82AAE74287BC3 /* Pods_MVP.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MVP.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		93E12ED1ED8330C87977F03B /* Pods-MVVM-Rx.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVM-Rx.release.xcconfig"; path = "Pods/Target Support Files/Pods-MVVM-Rx/Pods-MVVM-Rx.release.xcconfig"; sourceTree = "<group>"; };
@@ -164,6 +177,7 @@
 		D1A8D238274A96CB8473BCE0 /* Pods_MVVM_Delegate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MVVM_Delegate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE3874C7CCBB0911163E46EC /* Pods-MVP.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVP.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MVP/Pods-MVP.debug.xcconfig"; sourceTree = "<group>"; };
 		F23F792924C61F4EAF9490E9 /* Pods-Shared.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shared.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Shared/Pods-Shared.debug.xcconfig"; sourceTree = "<group>"; };
+		FCFC213B1137D23BA0A021A6 /* Pods-Uber-RIBs.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Uber-RIBs.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Uber-RIBs/Pods-Uber-RIBs.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -213,6 +227,14 @@
 			files = (
 				6547AB0221BAB3810071FD42 /* Shared.framework in Frameworks */,
 				C919749218F8E6A73E26D423 /* Pods_SharedTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		65F250BF2302902900C436B1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				222E9D5B1FFE40E254EBB74A /* Pods_Uber_RIBs.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -405,6 +427,34 @@
 			path = Base.lproj;
 			sourceTree = "<group>";
 		};
+		65F250C32302902900C436B1 /* Uber-RIBs */ = {
+			isa = PBXGroup;
+			children = (
+				65F250D02302902900C436B1 /* Info.plist */,
+				65F250D52302908500C436B1 /* Resources */,
+				65F250D42302908100C436B1 /* Sources */,
+			);
+			path = "Uber-RIBs";
+			sourceTree = "<group>";
+		};
+		65F250D42302908100C436B1 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				65F250C42302902900C436B1 /* AppDelegate.swift */,
+				65F250C62302902900C436B1 /* ViewController.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		65F250D52302908500C436B1 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				65F250CB2302902900C436B1 /* Assets.xcassets */,
+				65F250CD2302902900C436B1 /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		65F5081221AD7830008A9891 = {
 			isa = PBXGroup;
 			children = (
@@ -412,6 +462,7 @@
 				6547AA8A21BAB1240071FD42 /* MVP */,
 				6547AAA021BAB1330071FD42 /* MVVM-Delegate */,
 				6547AAB621BAB1400071FD42 /* MVVM-Rx */,
+				65F250C32302902900C436B1 /* Uber-RIBs */,
 				6547AAFA21BAB3810071FD42 /* Shared */,
 				6547AB0721BAB3810071FD42 /* SharedTests */,
 				65F5081C21AD7830008A9891 /* Products */,
@@ -429,6 +480,7 @@
 				6547AAB521BAB1400071FD42 /* MVVM-Rx.app */,
 				6547AAF921BAB3810071FD42 /* Shared.framework */,
 				6547AB0121BAB3810071FD42 /* SharedTests.xctest */,
+				65F250C22302902900C436B1 /* Uber-RIBs.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -466,6 +518,8 @@
 				646A362171034624C8993F20 /* Pods-Shared.release.xcconfig */,
 				74AFF3BDAE8D06C020920E3A /* Pods-SharedTests.debug.xcconfig */,
 				B14492D484012387A2366FD6 /* Pods-SharedTests.release.xcconfig */,
+				FCFC213B1137D23BA0A021A6 /* Pods-Uber-RIBs.debug.xcconfig */,
+				3F4D97D6627124755B2163B3 /* Pods-Uber-RIBs.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -479,6 +533,7 @@
 				CB4A1A327EBF9F42083E924C /* Pods_MVVM_Rx.framework */,
 				A9D2B51CFF21ECEF6B164739 /* Pods_Shared.framework */,
 				AB85B54724E92146D4245A97 /* Pods_SharedTests.framework */,
+				2693DCC9430ADE54F9CF991D /* Pods_Uber_RIBs.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -609,13 +664,32 @@
 			productReference = 6547AB0121BAB3810071FD42 /* SharedTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		65F250C12302902900C436B1 /* Uber-RIBs */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 65F250D12302902900C436B1 /* Build configuration list for PBXNativeTarget "Uber-RIBs" */;
+			buildPhases = (
+				F6BCD1CD01641F2BEDA03212 /* [CP] Check Pods Manifest.lock */,
+				65F250BE2302902900C436B1 /* Sources */,
+				65F250BF2302902900C436B1 /* Frameworks */,
+				65F250C02302902900C436B1 /* Resources */,
+				8E8781133F6C274293FEE582 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Uber-RIBs";
+			productName = "Uber-RIBs";
+			productReference = 65F250C22302902900C436B1 /* Uber-RIBs.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		65F5081321AD7830008A9891 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1010;
+				LastSwiftUpdateCheck = 1030;
 				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = "k-lpmg";
 				TargetAttributes = {
@@ -637,6 +711,9 @@
 					6547AB0021BAB3810071FD42 = {
 						CreatedOnToolsVersion = 10.1;
 					};
+					65F250C12302902900C436B1 = {
+						CreatedOnToolsVersion = 10.3;
+					};
 				};
 			};
 			buildConfigurationList = 65F5081621AD7830008A9891 /* Build configuration list for PBXProject "ios-architecture-example" */;
@@ -656,6 +733,7 @@
 				6547AA8821BAB1240071FD42 /* MVP */,
 				6547AA9E21BAB1330071FD42 /* MVVM-Delegate */,
 				6547AAB421BAB1400071FD42 /* MVVM-Rx */,
+				65F250C12302902900C436B1 /* Uber-RIBs */,
 				6547AAF821BAB3810071FD42 /* Shared */,
 				6547AB0021BAB3810071FD42 /* SharedTests */,
 			);
@@ -711,6 +789,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		65F250C02302902900C436B1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65F250CF2302902900C436B1 /* LaunchScreen.storyboard in Resources */,
+				65F250CC2302902900C436B1 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -805,6 +892,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		8E8781133F6C274293FEE582 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Uber-RIBs/Pods-Uber-RIBs-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Uber-RIBs/Pods-Uber-RIBs-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Uber-RIBs/Pods-Uber-RIBs-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		9AAC490D682442C9C9E4D7F2 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -842,6 +946,28 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MVVM-Rx/Pods-MVVM-Rx-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F6BCD1CD01641F2BEDA03212 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Uber-RIBs-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		FFBE021D4355E81C44428653 /* [CP] Check Pods Manifest.lock */ = {
@@ -965,6 +1091,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		65F250BE2302902900C436B1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65F250C72302902900C436B1 /* ViewController.swift in Sources */,
+				65F250C52302902900C436B1 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -1017,6 +1152,14 @@
 			isa = PBXVariantGroup;
 			children = (
 				65DA6A352236561600856F57 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		65F250CD2302902900C436B1 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				65F250CE2302902900C436B1 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -1255,7 +1398,9 @@
 			baseConfigurationReference = 74AFF3BDAE8D06C020920E3A /* Pods-SharedTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = SharedTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1265,6 +1410,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.k-lpmg.SharedTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -1274,7 +1420,9 @@
 			baseConfigurationReference = B14492D484012387A2366FD6 /* Pods-SharedTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = SharedTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1284,6 +1432,47 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.k-lpmg.SharedTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		65F250D22302902900C436B1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FCFC213B1137D23BA0A021A6 /* Pods-Uber-RIBs.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = "Uber-RIBs/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kanglpmg.Uber-RIBs";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		65F250D32302902900C436B1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3F4D97D6627124755B2163B3 /* Pods-Uber-RIBs.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = "Uber-RIBs/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.kanglpmg.Uber-RIBs";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -1459,6 +1648,15 @@
 			buildConfigurations = (
 				6547AB1521BAB3810071FD42 /* Debug */,
 				6547AB1621BAB3810071FD42 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		65F250D12302902900C436B1 /* Build configuration list for PBXNativeTarget "Uber-RIBs" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				65F250D22302902900C436B1 /* Debug */,
+				65F250D32302902900C436B1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
