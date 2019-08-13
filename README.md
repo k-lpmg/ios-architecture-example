@@ -1,7 +1,7 @@
 # iOS Architecture Example
 
 [![Build Status](https://travis-ci.org/k-lpmg/ios-architecture-example.svg?branch=master)](https://travis-ci.org/k-lpmg/ios-architecture-example)
-![Swift](https://img.shields.io/badge/Swift-4.2-orange.svg)
+![Swift](https://img.shields.io/badge/Swift-5.0-orange.svg)
 ![Architecture](https://img.shields.io/badge/architecture-MVC-brightgreen.svg)
 ![Architecture](https://img.shields.io/badge/architecture-MVP-brightgreen.svg)
 ![Architecture](https://img.shields.io/badge/architecture-MVVM-brightgreen.svg)
